@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. COUNTDOWN TIMER
   // ==========================================
   // Tentukan Tanggal Pernikahan di sini (Format: YYYY-MM-DDTHH:mm:ss)
-  const WEDDING_DATE = new Date("2026-12-12T08:00:00").getTime();
+  const WEDDING_DATE = new Date("2026-08-01T08:00:00").getTime();
 
   const runCountdown = () => {
     const now = new Date().getTime();
@@ -192,12 +192,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       nama: "Budi & Sarah",
       kehadiran: "hadir",
-      pesan: "Selamat menempuh hidup baru Luthfi dan Nadzira! Semoga cinta kalian selalu bertumbuh dan menjadi keluarga yang sakinah, mawaddah, warahmah. Amin!"
+      pesan: "Selamat menempuh hidup baru Zaki dan Yulia! Semoga cinta kalian selalu bertumbuh dan menjadi keluarga yang sakinah, mawaddah, warahmah. Amin!"
     },
     {
       nama: "Diana Lestari",
       kehadiran: "hadir",
-      pesan: "Happy Wedding! Ikut bahagia melihat perjalanan kalian berdua. Maaf belum bisa hadir langsung karena masih di luar kota, tapi doa terbaik selalu mengiringi langkah kalian."
+      pesan: "Happy Wedding! Ikut bahagia melihat perjalanan kalian berdua. Semoga dilancarkan semua acaranya dan berkah selalu. Doa terbaik selalu mengiringi langkah kalian."
     },
     {
       nama: "Ahmad Subarjo",
