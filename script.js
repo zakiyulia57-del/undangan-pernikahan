@@ -285,7 +285,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ==========================================
-  // 6. SCROLL REVEAL ANIMATION (VANILLA JS)
+  // 6. SALIN REKENING (COPY TO CLIPBOARD)
+  // ==========================================
+  const copyButtons = document.querySelectorAll(".btn-copy");
+  copyButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const textToCopy = btn.getAttribute("data-copy");
+      if (!textToCopy) return;
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const textSpan = btn.querySelector(".btn-copy-text");
+        const originalText = textSpan ? textSpan.textContent : "Salin No. Rekening";
+        
+        btn.classList.add("copied");
+        if (textSpan) textSpan.textContent = "Tersalin!";
+
+        setTimeout(() => {
+          btn.classList.remove("copied");
+          if (textSpan) textSpan.textContent = originalText;
+        }, 2000);
+      }).catch(err => {
+        console.error("Gagal menyalin teks: ", err);
+      });
+    });
+  });
+
+
+  // ==========================================
+  // 7. SCROLL REVEAL ANIMATION (VANILLA JS)
   // ==========================================
   function triggerRevealOnScroll() {
     const reveals = document.querySelectorAll(".reveal");

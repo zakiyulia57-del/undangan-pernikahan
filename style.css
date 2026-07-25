@@ -1149,6 +1149,145 @@ section {
 }
 
 /* ===================================================
+   WEDDING GIFT SECTION
+   =================================================== */
+#gift {
+  background: var(--color-cream-dark);
+  text-align: center;
+}
+
+.gift-subtitle {
+  max-width: 600px;
+  margin: 0.5rem auto 2.5rem;
+  color: var(--color-text-mid);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.gift-card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.gift-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fcf9f2 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 2rem 2.2rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.gift-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), var(--color-gold-light));
+}
+
+.gift-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+.gift-bank-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--color-border);
+  padding-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.gift-bank-logo {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  color: #00529C;
+}
+
+.gift-icon {
+  font-size: 1.5rem;
+}
+
+.gift-card-body {
+  margin-bottom: 1.5rem;
+}
+
+.gift-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: 0.3rem;
+}
+
+.gift-rekening {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-gold-dark);
+  margin-bottom: 0.4rem;
+}
+
+.gift-an {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-text-mid);
+}
+
+.gift-an strong {
+  color: var(--color-text-dark);
+  font-family: var(--font-sans);
+}
+
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-gold);
+  border: 1.5px solid var(--color-gold);
+  border-radius: 50px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 15px rgba(179, 143, 45, 0.25);
+}
+
+.btn-copy:hover {
+  background: #fff;
+  border-color: var(--color-gold);
+  color: var(--color-gold-dark);
+  box-shadow: 0 6px 20px rgba(179, 143, 45, 0.35);
+}
+
+.btn-copy.copied {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: #fff;
+}
+
+/* ===================================================
    FOOTER
    =================================================== */
 footer {
