@@ -1311,14 +1311,16 @@ footer {
 }
 
 .footer-heart {
-  color: var(--color-gold);
+  color: var(--color-gold-light);
   display: inline;
 }
 
 .footer-made {
-  font-size: 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 500;
   margin-top: 1.5rem;
-  opacity: 0.4;
+  color: var(--color-gold-light);
+  opacity: 0.95;
   letter-spacing: 0.1em;
 }
 
@@ -1331,20 +1333,20 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 0.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--color-gold);
   border-radius: 50%;
-  color: rgba(255, 255, 255, 0.55);
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-gold-light);
+  background: rgba(179, 143, 45, 0.2);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   transition: all var(--transition-base);
 }
 
 .footer-ig-link:hover {
-  color: var(--color-gold-light);
-  border-color: var(--color-gold);
-  background: rgba(179, 143, 45, 0.12);
-  box-shadow: 0 4px 20px rgba(179, 143, 45, 0.2);
+  color: #ffffff;
+  border-color: var(--color-gold-light);
+  background: var(--color-gold);
+  box-shadow: 0 4px 20px rgba(179, 143, 45, 0.5);
   transform: translateY(-2px);
 }
 
@@ -1354,7 +1356,7 @@ footer {
 
 .footer-ig-link:hover .footer-ig-icon {
   transform: rotate(8deg) scale(1.15);
-  stroke: var(--color-gold-light);
+  stroke: #ffffff;
 }
 
 /* ===================================================

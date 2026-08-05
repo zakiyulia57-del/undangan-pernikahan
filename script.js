@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. COUNTDOWN TIMER
   // ==========================================
   // Tentukan Tanggal Pernikahan di sini (Format: YYYY-MM-DDTHH:mm:ss)
-  const WEDDING_DATE = new Date("2026-08-01T08:00:00").getTime();
+  const WEDDING_DATE = new Date("2026-08-21T09:00:00").getTime();
 
   const runCountdown = () => {
     const now = new Date().getTime();
